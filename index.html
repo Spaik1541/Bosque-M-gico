@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Perdido no Bosque Mágico</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="imgs/Floresta Mágica.jpg" alt="Floresta">
+            <p>Você acorda em uma floresta, voce está apenas com uma lupa,  a primeira coisa que ve quando presta atenção aos arredores é uma pequena fada.
+                Você fica em duvida se segue ou não a fada mágica. (Seu objetivo é escapar da floresta)</p>
+            <button class="btn-proximo" data-proximo="1">Não seguir a fada</button>
+            <button class="btn-proximo" data-proximo="2">Seguir a fada</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="imgs/Cachorro-Machucado.webp" alt="Cachorro-Machucado">
+            <p>Você decide não seguir a fada, o que faz você ir para o lado oposto, encontrando um pequeno cachorro machucado.</p>
+            <button class="btn-proximo" data-proximo="4">Ajudar o cachorro</button>
+            <button class="btn-proximo" data-proximo="3">Ignorar e seguir caminho</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="imgs/Lago-Mágico.avif" alt="Lago-Mágico">
+            <p>A fada te leva a um lago com água rosa, ele tem cheiro de morango, e tem peixes muito bonitos. A fada te mostra que a água é capaz de transformar objetos, e te indica para colocar sua lupa na água.</p>
+            <button class="btn-proximo" data-proximo="5">Colocar a lupa na água</button>
+            <button class="btn-proximo" data-proximo="1">Procurar outra coisa</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="imgs/Placas-Divisoras.jpg" alt="Placas-Divisoras">
+            <p>Você segue caminho por medo do cachorro machucado ser algum tipo de armadilha, chegando em uma biforcação, com uma placa dizendo, “a esquerda tem a saída" e outra dizendo "a direita a perdição completa”.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir a direita</button>
+            <button class="btn-proximo" data-proximo="6">Seguir a esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="imgs/Monstro-Floresa.jpg" alt="Monstro-FLoresta">
+            <p>Você tenta ajudar o cachorro, porém ele se revela uma parte de um monstro terrível você tenta fugir mas, é inútil, o monstro te devora.
+                Fim da Aventura.</p>
+                <button class="btn-proximo" data-proximo="0">Tentar outra rota</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="imgs/Bosque-Final.jpg" alt="Bosque-Final">
+            <p>A lupa se transforma em uma lupa mágica ao qual te revela o caminho para a saída da floresta,
+                Parabéns você conseguiu fugir do bosque Mágico.</p>
+                <button class="btn-proximo" data-proximo="0">Tentar outra rota</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="imgs/Floresta-Saida.jpg" alt="Floresta-saida">
+            <p>Você segue a esquerda, com medo da placa estar te enganando porém, você se surpreende ao ver que realmente a saída era por esse caminho,
+                Parabens! voce conseguiu fuigir do bosque mágico.
+                </p>
+            <button class="btn-proximo" data-proximo="0">Tentar outra rota</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="imgs/Floresta-Perdicao.jpg" alt="Perdicao">
+            <p>Você por duvidar que a placa esteja falando a verdade, segue o caminho da direita, o que te conduz a um caminho profundo e sem volta para a maior escuridão do bosque, parece que você tem que acreditar mais nas placas que voce acha pelo caminho.
+            </p>
+            <button class="btn-proximo" data-proximo="0">Tentar outra rota</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
